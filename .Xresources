@@ -1,0 +1,21 @@
+! font stuff
+XTerm*faceName: JetBrainsMono Nerd Font
+XTerm*faceSize: 12
+XTerm*facceAntialias: true
+XTerm.vt100.reverseVideo: true
+
+! enable mouse reporting for tmux/nvim
+XTerm*allowMouseOps: false
+XTerm*pointerMode: 2
+XTerm*highlightselection: true
+XTerm*selectToClipboard: true
+
+! audio/visual bell off
+XTerm*bellIsUrgent: false
+XTerm*visualBell: false
+XTerm*audibleBell: false
+
+! Adjust how the active menu item looks
+XTerm*.SimpleMenu.*.shadowWidth: 3
+XTerm*.SimpleMenu.*.topShadowPixel: SkyBlue
+XTerm*.SimpleMenu.*.bottomShadowPixel: LightSkyBlue
