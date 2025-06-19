@@ -1,6 +1,10 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+#
+
+# Vim motiions
+set -o vi
 
 #Stuff I added to path!
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
@@ -12,6 +16,8 @@ export MANPAGER="nvim +Man!"
 
 # for github dotfiles repo
 alias git-dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+alias vpn-um='sudo openconnect --user=kk118641 https://evpn2.umt.edu'
 
 # If not running interactively, don't do anything
 case $- in
@@ -137,3 +143,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # The next line enables shell command completion for gcloud.
 # if [ -f '/home/kyle/Downloads/google-cloud-cli-linux-x86_64/google-cloud-sdk/completion.bash.inc' ]; then . '/home/kyle/Downloads/google-cloud-cli-linux-x86_64/google-cloud-sdk/completion.bash.inc'; fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/kyle/NRML/scripts/google_utils/google-cloud-sdk/path.bash.inc' ]; then . '/home/kyle/NRML/scripts/google_utils/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/kyle/NRML/scripts/google_utils/google-cloud-sdk/completion.bash.inc' ]; then . '/home/kyle/NRML/scripts/google_utils/google-cloud-sdk/completion.bash.inc'; fi
